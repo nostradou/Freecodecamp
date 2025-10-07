@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encuesta Airbag</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Exo+2:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <h1 id="title">Encuesta sobre Airbag</h1>
+    <p id="description">Queremos conocer tu opinión sobre la banda Airbag. Por favor completa este formulario.</p>
+
+    <form id="survey-form">
+      <label id="name-label" for="name">Nombre completo</label>
+      <input id="name" type="text" name="name" placeholder="Ingresa tu nombre" required>
+
+      <label id="email-label" for="email">Correo electrónico</label>
+      <input id="email" type="email" name="email" placeholder="ejemplo@mail.com" required>
+
+      <label id="number-label" for="number">¿Cuántos conciertos de Airbag viste?</label>
+      <input id="number" type="number" name="concerts" min="0" max="50" placeholder="0" required>
+
+      <label for="dropdown">¿Cuál es tu disco favorito?</label>
+      <select id="dropdown" name="album">
+        <option value="libertad">Libertad</option>
+        <option value="almohada">Almohada</option>
+        <option value="otros">Otro</option>
+      </select>
+
+      <fieldset>
+        <legend>¿Cómo descubriste Airbag?</legend>
+        <label><input type="radio" name="discover" value="amigos"> Amigos</label>
+        <label><input type="radio" name="discover" value="internet"> Internet</label>
+        <label><input type="radio" name="discover" value="tv"> TV/Radio</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>¿Qué aspectos disfrutas más?</legend>
+        <label><input type="checkbox" name="enjoy" value="letras"> Letras</label>
+        <label><input type="checkbox" name="enjoy" value="guitarras"> Guitarras</label>
+        <label><input type="checkbox" name="enjoy" value="voz"> Voz</label>
+        <label><input type="checkbox" name="enjoy" value="shows"> Shows en vivo</label>
+      </fieldset>
+
+      <label for="comments">Comentarios adicionales</label>
+      <textarea id="comments" name="comments" rows="5" placeholder="Escribe aquí tu opinión..."></textarea>
+
+      <button id="submit" type="submit">Enviar Encuesta</button>
+    </form>
+  </main>
+</body>
+</html>
