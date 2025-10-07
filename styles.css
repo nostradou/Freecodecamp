@@ -1,0 +1,90 @@
+body {
+  font-family: 'Exo 2', sans-serif;
+  background: linear-gradient(135deg, #1b1b1d, #2b2b30);
+  color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  max-width: 650px;
+  margin: 2rem auto;
+  background: #232327;
+  padding: 2rem;
+  border-radius: 14px;
+  box-shadow: 0 0 20px rgba(100, 0, 150, 0.4);
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  color: #d43f52;
+  font-size: 2.2rem;
+  margin-bottom: 0.8rem;
+}
+
+p {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #bbb;
+  margin-bottom: 2rem;
+}
+
+label, legend {
+  display: block;
+  margin-top: 1rem;
+  font-weight: 600;
+  color: #e2e2e2;
+}
+
+input, select, textarea, button {
+  width: 100%;
+  padding: 0.7rem;
+  margin-top: 0.5rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: #34343a;
+  color: #f4f4f4;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: 2px solid #a020f0;
+  background: #3d3d46;
+}
+
+input[type="radio"], input[type="checkbox"] {
+  width: auto;
+  margin-right: 0.5rem;
+}
+
+fieldset {
+  border: 1px solid #444;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 10px;
+  background: #2a2a30;
+}
+
+button {
+  background: linear-gradient(90deg, #d43f52, #a020f0);
+  color: #fff;
+  margin-top: 1.5rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+@media (max-width: 600px) {
+  main {
+    margin: 1rem;
+    padding: 1.2rem;
+  }
+  h1 {
+    font-size: 1.7rem;
+  }
+}
